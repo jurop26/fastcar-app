@@ -8,6 +8,7 @@
       "expo-router"
     ],
     "name": "fastcar-app",
-    "slug": "fastcar-app"
+    "slug": "fastcar-app",
+    "orientation": "portrait"
   }
 }

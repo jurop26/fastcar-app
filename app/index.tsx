@@ -1,8 +1,8 @@
 import React from "react";
-import { ActivityIndicator, Text, View } from "react-native";
-import { AsyncSkia } from "../components/async-skia";
+import { ActivityIndicator, View } from "react-native";
+import { AsyncSkia } from "../components/async-skia.native";
+import { CarComponent } from "../components/CarComponent";
 
-const Iridescence = React.lazy(() => import("../components/iridescence"));
 
 export default function Page() {
   return (
@@ -12,18 +12,11 @@ export default function Page() {
       >
         <React.Suspense fallback={<ActivityIndicator />}>
           <AsyncSkia />
-          <Iridescence />
+          <CarComponent />
+
         </React.Suspense>
       </View>
-      <Text
-        style={{
-          fontSize: 32,
-          fontWeight: "bold",
-          fontStyle: "italic",
-        }}
-      >
-        Welcome to Expo
-      </Text>
-    </View>
+
+    </View >
   );
 }

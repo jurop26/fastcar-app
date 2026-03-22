@@ -1,0 +1,48 @@
+import { Skia } from "@shopify/react-native-skia";
+
+const path = Skia.Path.Make();
+path.moveTo(120, 0);
+path.lineTo(130, 60);
+path.lineTo(150, 60);
+path.lineTo(150, 40);
+path.lineTo(190, 40);
+path.lineTo(190, 100);
+path.lineTo(150, 100);
+path.lineTo(150, 80);
+path.lineTo(130, 80);
+path.lineTo(140, 120);
+path.lineTo(140, 180);
+path.lineTo(150, 180);
+path.lineTo(150, 150);
+path.lineTo(200, 150);
+path.lineTo(200, 230);
+path.lineTo(150, 230);
+path.lineTo(150, 200);
+path.lineTo(140, 200);
+path.lineTo(120, 240);
+path.lineTo(175, 240);
+path.lineTo(190, 290);
+path.lineTo(10, 290);
+path.lineTo(25, 240);
+path.lineTo(80, 240);
+path.lineTo(60, 200);
+path.lineTo(50, 200);
+path.lineTo(50, 230);
+path.lineTo(0, 230);
+path.lineTo(0, 150);
+path.lineTo(50, 150);
+path.lineTo(50, 180);
+path.lineTo(60, 180);
+path.lineTo(60, 120);
+path.lineTo(70, 80);
+path.lineTo(50, 80);
+path.lineTo(50, 100);
+path.lineTo(10, 100);
+path.lineTo(10, 40);
+path.lineTo(50, 40);
+path.lineTo(50, 60);
+path.lineTo(70, 60);
+path.lineTo(80, 0);
+path.close();
+
+export default path
