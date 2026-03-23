@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { Canvas, Path, Skia } from "@shopify/react-native-skia";
+import { Canvas, Path } from "@shopify/react-native-skia";
 import { Accelerometer } from "expo-sensors";
+import React, { useEffect } from "react";
 import { useWindowDimensions } from "react-native";
-import { useSharedValue, useDerivedValue } from "react-native-reanimated";
+import { useDerivedValue, useSharedValue } from "react-native-reanimated";
 import CAR_PATH from "../constans/car";
 
 export const CarComponent = () => {
@@ -43,7 +43,7 @@ export const CarComponent = () => {
     }, [translateX, translateY]);
 
     return (
-        <Canvas style={{ flex: 1, backgroundColor: "black" }}>
+        <Canvas style={{ flex: 1 }}>
             <Path path={CAR_PATH} color="red" transform={transform} />
         </Canvas>
     );

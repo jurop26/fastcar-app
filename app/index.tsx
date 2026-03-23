@@ -2,6 +2,7 @@ import React from "react";
 import { ActivityIndicator, View } from "react-native";
 import { AsyncSkia } from "../components/async-skia.native";
 import { CarComponent } from "../components/CarComponent";
+import { RoadComponent } from "../components/RoadComponent";
 
 
 export default function Page() {
@@ -12,6 +13,7 @@ export default function Page() {
       >
         <React.Suspense fallback={<ActivityIndicator />}>
           <AsyncSkia />
+          <RoadComponent />
           <CarComponent />
 
         </React.Suspense>
