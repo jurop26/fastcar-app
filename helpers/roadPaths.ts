@@ -22,3 +22,7 @@ export function createPath(
 
   return path;
 }
+
+export function randomByRange({ from, to }: { from: number; to: number }) {
+  return Math.floor(Math.random() * (to - from + 1)) + from;
+}
